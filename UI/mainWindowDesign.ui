@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>ChessGame</string>
+  </property>
+  <property name="whatsThis">
+   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;asgafgdfg&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background:rgb(50,46,43);
+}
+QPushButton{
+	color:rgb(162,150,135);
+	background-color:rgb(255,255,255);
+	font-size:66px;
+	border-radius:10px;
+}
+QPushButton::hover{
+	background-color:rgb(222,222,222);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="chess_let">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>44</y>
+      <width>653</width>
+      <height>105</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>18thCentury</family>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+	color: rgb(162,150,135);
+</string>
+    </property>
+    <property name="text">
+     <string>Шахматы</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playButton">
+    <property name="geometry">
+     <rect>
+      <x>387</x>
+      <y>269</y>
+      <width>600</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Играть</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tasksButton">
+    <property name="geometry">
+     <rect>
+      <x>387</x>
+      <y>387</y>
+      <width>600</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Задачи</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ruleButton">
+    <property name="geometry">
+     <rect>
+      <x>387</x>
+      <y>507</y>
+      <width>600</width>
+      <height>82</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Правила</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="chess_img">
+    <property name="geometry">
+     <rect>
+      <x>-156</x>
+      <y>18</y>
+      <width>670</width>
+      <height>740</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>chess.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>chess_img</zorder>
+   <zorder>chess_let</zorder>
+   <zorder>playButton</zorder>
+   <zorder>tasksButton</zorder>
+   <zorder>ruleButton</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
